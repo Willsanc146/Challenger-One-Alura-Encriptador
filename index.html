@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Encriptador de texto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/Logo@2x.png" alt="Imagen de la a de Alura">
+        </header>
+
+        <main>
+            <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" source src="background_video/video1.mp4" type="video/mp4"></video>
+
+            <section class="ingreso">
+
+                <textarea type="text" class="input-text" id="input-text" cols="38" rows="9" placeholder="Ingrese el texto aquí"></textarea>
+                    <h4>
+                    <lord-icon src="https://cdn.lordicon.com/tdrtiskw.json" trigger="loop" colors="primary:#9e0000,secondary:#ff4500" delay="2000" style="width:50px;height:50px">
+                    </lord-icon>
+                    Solo letras minúsculas y sin acentos</h4>
+
+                <div class="boton-encriptar-desencriptar">
+                    <button type="button" onclick="btnEncriptar()" class="btnEncriptar">Encriptar</button>
+                    <button type="button" onclick="btnDesencriptar()" class="btnDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="borrar">
+                <div>
+                    <input type="button" class="btnlimpiar" value="Limpiar" onclick="javascript:limpiarTextarea();">
+                </div>
+                <div class="animacion">
+                    <lord-icon src="https://cdn.lordicon.com/dtgezzsi.json" trigger="loop" colors="primary:#FFD700,secondary:#ffffff" delay="2000" style="width:150px;height:150px"></lord-icon>
+                    <lord-icon src="https://cdn.lordicon.com/fqrjldna.json" trigger="loop" colors="primary:#FFD700,secondary:#ffffff" delay="2000" style="width:200px;height:200px"></lord-icon>
+                </div>
+            </section>
+            <section class="salida">
+                <div id="img-area-text">
+                    <img src="imagenes/Muneco.png" alt="muñeco de búsqueda">
+                    <h3>Ningún mensaje fue encontrado.</h3>
+                </div>
+                <textarea type="text" cols="38" rows="18" class="input-text-area" id="input-text-area"></textarea>
+                <button onclick="copiar()" class="btnCopiar" id="btnCopiar">Copiar</button>
+            </section>
+        </main>
+        <footer>
+            <img src="imagenes/Logo__1.png" alt="Logo de la Barbería Alura">
+            <p class="copyright">&copy Copyright Wiliam Sanchez - 2022</p>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    </body>
+</html>
